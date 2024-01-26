@@ -19,7 +19,7 @@ public class MyKafkaListener {
     @KafkaListener(topics = "greetings-topic", groupId = "my-kafka-listener")
     public void listen(Greeting greeting) {
         myRepository.save(greeting);
-        logger.info("Greeting message '{}' received", greeting.message());
+        logger.info("Greeting message '{}' stored", greeting.message());
     }
 
 }
