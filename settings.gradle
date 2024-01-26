@@ -1,0 +1,4 @@
+rootProject.name = 'pact-messaging'
+
+include 'pact-consumer'
+include 'pact-provider'
